@@ -52,7 +52,7 @@ figcaption {
 }
 
 /* for container queries, landmarks as containers */
-body > :is(header, footer),
+body> :is(header, footer),
 main {
   container-type: inline-size;
 }
@@ -141,7 +141,7 @@ main {
 }
 
 /* Composition */
-.flow > * + * {
+.flow>*+* {
   margin-block-start: var(--flow-space, 1em);
 }
 
@@ -178,9 +178,62 @@ body {
   color: var(--clr-primary-dark);
 }
 
+
+nav {
+  color: var(--clr-green-400);
+  font-weight: var(--fw-600);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  color: var(--clr-green-400);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-500);
+  padding-right: 2em;
+  gap: 2em
+}
+
+footer {
+  background-color: var(--clr-green-400);
+  color: var(--clr-neutral-100);
+}
+
+footer a {
+  color: var(--clr-neutral-100);
+}
+
+/* for multicoloured info tags under images */
+
 .tag {
   border-radius: 12px;
   padding: 0.2rem;
   max-width: fit-content;
   background-color: var(--clr-green-400);
+}
+
+.green-icons {
+  color: var(--clr-green-400);
+}
+
+.user-tags {
+  font-weight: var(--fw-600);
+}
+
+.leaf-logo {
+  padding-right: 1em;
+  display: block;
+  text-indent: -9999px;
+  color: var(--clr-green-800);
+  height: var(--fs-800);
 }
