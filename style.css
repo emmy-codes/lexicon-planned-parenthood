@@ -177,3 +177,10 @@ body {
   background-color: var(--clr-accent-light-1);
   color: var(--clr-primary-dark);
 }
+
+.tag {
+  border-radius: 12px;
+  padding: 0.2rem;
+  max-width: fit-content;
+  background-color: var(--clr-green-400);
+}
