@@ -127,6 +127,9 @@ main {
   --fw-semi-bold: var(--fw-600);
   --fw-bold: var(--fw-700);
   --fw-x-bold: var(--fw-900);
+
+  /* add box-shadow */
+  --box-shadow: 0 2px 4px grey;
 }
 
 /* Utilities */
@@ -153,7 +156,7 @@ h3 {
 }
 
 h2 {
-  font-size: var(--fs-700);
+  font-size: var(--fs-600);
 }
 
 h3 {
@@ -178,6 +181,11 @@ body {
   color: var(--clr-primary-dark);
 }
 
+h1 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-700);
+  margin: auto;
+}
 
 nav {
   color: var(--clr-green-400);
@@ -192,7 +200,6 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 0.5rem;
 }
 
 .nav-links {
@@ -204,6 +211,67 @@ nav {
   gap: 2em
 }
 
+.appreciated-plants-banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 60vw;
+  margin: auto;
+}
+
+.banner-img {
+  box-shadow: 0 2px 4px grey;
+  min-width: 100%;
+  padding: 1em;
+  height: 50vh;
+}
+
+.newsletter-container {
+  position: relative;
+  background-color: white;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plants-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.plants-grid-item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: var(--box-shadow);
+}
+
+.plant-heading {
+  padding: 1rem 0;
+}
+
+/* for multicoloured info tags under images */
+
+.tag-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border-radius: 12px;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  max-width: fit-content;
+  background-color: var(--clr-green-400);
+}
+
 footer {
   background-color: var(--clr-green-400);
   color: var(--clr-neutral-100);
@@ -213,17 +281,14 @@ footer a {
   color: var(--clr-neutral-100);
 }
 
-/* for multicoloured info tags under images */
-
-.tag {
-  border-radius: 12px;
-  padding: 0.2rem;
-  max-width: fit-content;
-  background-color: var(--clr-green-400);
-}
 
 .green-icons {
   color: var(--clr-green-400);
+}
+
+.user-tags-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .user-tags {
