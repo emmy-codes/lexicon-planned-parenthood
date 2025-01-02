@@ -228,7 +228,7 @@ nav {
 
 .appreciated-plants-banner p {
   align-self: center;
- }
+}
 
 .banner-img {
   background-color: var(--clr-neutral-100);
@@ -243,9 +243,22 @@ nav {
   background-color: var(--clr-neutral-100);
   margin: 2rem 0;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.email-form-wrapper {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.planting-email-logo {
+  background-color: var(--clr-green-400);
+  border-radius: 50%;
+  padding: var(--fs-700);
 }
 
 .plants-grid-container {
@@ -289,7 +302,7 @@ nav {
 }
 
 .avatar-imgs {
-  max-width: 2rem;
+  max-width: var(--fs-700);
   border: 1px black solid;
   border-radius: 50%;
   margin-right: 1rem;
@@ -301,9 +314,7 @@ nav {
   text-align: center;
 }
 
-.planted-plants h2 {
-  
-}
+.planted-plants h2 {}
 
 footer {
   background-color: var(--clr-green-400);

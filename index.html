@@ -21,12 +21,12 @@
     <p>PLANNED <br>PLANTHOOD</p>
   </article>
 
-  <article class="nav-links">
+  <section class="nav-links">
     <a href="#">HEM</a>
     <a href="#">HISTORIK</a>
     <a href="#">TIPS</a>
     <a href="#">KONTAKT</a>
-  </article>
+  </section>
 </nav>
 
 <section class="main-content-wrapper">
@@ -38,11 +38,18 @@
     </article>
   </section>
 
-  <article class="newsletter-container">
-    <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
-    <p>Email input field goes here</p>
-    <img src="/Assets/images/icon-planting.svg" alt="">
-  </article>
+  <section class="newsletter-container">
+    <article class="email-form-wrapper">
+      <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
+      <form action="POST" class="newsletter-form">
+        <article class="input-container">
+          <input type="email" id="email" name="email">
+          <button type="submit" class="btn-newsletter-submit">Skicka</button>
+        </article>
+      </form>
+    </article>
+    <img src="/Assets/images/icon-planting.svg" alt="" class="planting-email-logo">
+  </section>
 
   <section class="plants-grid-container"> 
     
@@ -267,13 +274,13 @@
   </section>
 </section>
 
-<article class="planted-plants">
+<section class="planted-plants">
   <h2 class="">Våra tidigare odlingar</h2>
   <img src="" alt="">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis.
   Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
   <button class="">Planterade plantor</button>
-</article>
+</section>
 
 
 <footer>
